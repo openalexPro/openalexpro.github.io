@@ -21,35 +21,35 @@ OpenAlex provides free, comprehensive metadata on over 250 million scholarly wor
   <td>Core API client — query OpenAlex, page through results, and store everything in Parquet files for efficient downstream use</td>
   <td><a href="https://github.com/openalexPro/openalexPro/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/openalexPro/openalexPro/actions/workflows/R-CMD-check.yaml/badge.svg" height="22" alt="CI"></a></td>
   <td><a href="https://openalexpro.github.io/openalexPro/"><img src="https://img.shields.io/badge/docs-📖-blue" height="22" alt="Docs"></a></td>
-  <td><a href="https://openalexpro.r-universe.dev/openalexPro"><img src="https://openalexpro.r-universe.dev/openalexPro/badges/version" height="22" alt="r-universe"></a></td>
+  <td><a href="https://openalexpro.r-universe.dev/openalexPro"><img src="https://openalexpro.r-universe.dev/openalexPro/badges/version" height="22" alt="r-universe"></a><br><a href="https://doi.org/10.5281/zenodo.17453180"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17453180.svg" height="22" alt="DOI"></a></td>
 </tr>
 <tr>
   <td><a href="https://github.com/openalexPro/openalexSnowball"><strong>openalexSnowball</strong></a></td>
   <td>Snowball citation searches — iteratively expand a seed set by following forward and backward citations across the graph</td>
   <td><a href="https://github.com/openalexPro/openalexSnowball/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/openalexPro/openalexSnowball/actions/workflows/R-CMD-check.yaml/badge.svg" height="22" alt="CI"></a></td>
   <td><a href="https://openalexpro.github.io/openalexSnowball/"><img src="https://img.shields.io/badge/docs-📖-blue" height="22" alt="Docs"></a></td>
-  <td><a href="https://openalexpro.r-universe.dev/openalexSnowball"><img src="https://openalexpro.r-universe.dev/openalexSnowball/badges/version" height="22" alt="r-universe"></a></td>
+  <td><a href="https://openalexpro.r-universe.dev/openalexSnowball"><img src="https://openalexpro.r-universe.dev/openalexSnowball/badges/version" height="22" alt="r-universe"></a><br><a href="https://doi.org/10.5281/zenodo.20448982"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20448982.svg" height="22" alt="DOI"></a></td>
 </tr>
 <tr>
   <td><a href="https://github.com/openalexPro/openalexConvert"><strong>openalexConvert</strong></a></td>
   <td>Export a Parquet corpus to BibTeX, BibLaTeX, CSL JSON, Markdown, LaTeX, HTML, or PDF via Pandoc</td>
   <td><a href="https://github.com/openalexPro/openalexConvert/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/openalexPro/openalexConvert/actions/workflows/R-CMD-check.yaml/badge.svg" height="22" alt="CI"></a></td>
   <td><a href="https://openalexpro.github.io/openalexConvert/"><img src="https://img.shields.io/badge/docs-📖-blue" height="22" alt="Docs"></a></td>
-  <td><a href="https://openalexpro.r-universe.dev/openalexConvert"><img src="https://openalexpro.r-universe.dev/openalexConvert/badges/version" height="22" alt="r-universe"></a></td>
+  <td><a href="https://openalexpro.r-universe.dev/openalexConvert"><img src="https://openalexpro.r-universe.dev/openalexConvert/badges/version" height="22" alt="r-universe"></a><br><a href="https://doi.org/10.5281/zenodo.20448988"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20448988.svg" height="22" alt="DOI"></a></td>
 </tr>
 <tr>
   <td><a href="https://github.com/openalexPro/openalexSnapshot"><strong>openalexSnapshot</strong></a></td>
   <td>Bulk snapshot tools — convert the full OpenAlex JSON.GZ snapshot to Parquet, build ID-lookup indexes, and extract records at scale using a Rust back-end</td>
   <td><a href="https://github.com/openalexPro/openalexSnapshot/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/openalexPro/openalexSnapshot/actions/workflows/R-CMD-check.yaml/badge.svg" height="22" alt="CI"></a></td>
   <td><a href="https://openalexpro.github.io/openalexSnapshot/"><img src="https://img.shields.io/badge/docs-📖-blue" height="22" alt="Docs"></a></td>
-  <td><a href="https://openalexpro.r-universe.dev/openalexSnapshot"><img src="https://openalexpro.r-universe.dev/openalexSnapshot/badges/version" height="22" alt="r-universe"></a></td>
+  <td><a href="https://openalexpro.r-universe.dev/openalexSnapshot"><img src="https://openalexpro.r-universe.dev/openalexSnapshot/badges/version" height="22" alt="r-universe"></a><br><a href="https://doi.org/10.5281/zenodo.20448992"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20448992.svg" height="22" alt="DOI"></a></td>
 </tr>
 <tr>
   <td><a href="https://github.com/openalexPro/openalexVectorComp"><strong>openalexVectorComp</strong></a></td>
   <td>Text embedding, cosine-distance scoring, and threshold calibration — backend-neutral (HuggingFace, OpenAI, TEI)</td>
   <td><a href="https://github.com/openalexPro/openalexVectorComp/actions/workflows/pr-checks.yml"><img src="https://github.com/openalexPro/openalexVectorComp/actions/workflows/pr-checks.yml/badge.svg" height="22" alt="CI"></a></td>
   <td><a href="https://openalexpro.github.io/openalexVectorComp/"><img src="https://img.shields.io/badge/docs-📖-blue" height="22" alt="Docs"></a></td>
-  <td><a href="https://openalexpro.r-universe.dev/openalexVectorComp"><img src="https://openalexpro.r-universe.dev/openalexVectorComp/badges/version" height="22" alt="r-universe"></a></td>
+  <td><a href="https://openalexpro.r-universe.dev/openalexVectorComp"><img src="https://openalexpro.r-universe.dev/openalexVectorComp/badges/version" height="22" alt="r-universe"></a><br><a href="https://doi.org/10.5281/zenodo.19607514"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.19607514.svg" height="22" alt="DOI"></a></td>
 </tr>
 </tbody>
 </table>
