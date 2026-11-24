@@ -54,6 +54,12 @@ OpenAlex provides free, comprehensive metadata on over 250 million scholarly wor
   <td><a href="https://openalexpro.r-universe.dev/openalexVectorComp"><img src="https://openalexpro.r-universe.dev/openalexVectorComp/badges/version" alt="r-universe version"></a><br><a href="https://github.com/openalexPro/openalexVectorComp/tree/main"><img src="https://img.shields.io/github/r-package/v/openalexPro/openalexVectorComp/main?label=main" alt="main version"></a><br><a href="https://github.com/openalexPro/openalexVectorComp/tree/dev"><img src="https://img.shields.io/github/r-package/v/openalexPro/openalexVectorComp/dev?label=dev" alt="dev version"></a></td>
   <td><a href="https://app.codecov.io/gh/openalexPro/openalexVectorComp"><img src="https://codecov.io/gh/openalexPro/openalexVectorComp/graph/badge.svg" alt="Codecov"></a><br><a href="https://github.com/openalexPro/openalexVectorComp/actions/workflows/pr-checks.yml?query=branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/openalexPro/openalexVectorComp/pr-checks.yml?branch=main&label=CI%20main" alt="CI main"></a><br><a href="https://github.com/openalexPro/openalexVectorComp/actions/workflows/pr-checks.yml?query=branch%3Adev"><img src="https://img.shields.io/github/actions/workflow/status/openalexPro/openalexVectorComp/pr-checks.yml?branch=dev&label=CI%20dev" alt="CI dev"></a></td>
 </tr>
+<tr>
+  <td><a href="https://github.com/openalexPro/openalexAPI"><strong>openalexAPI</strong></a><br><a href="https://openalexpro.github.io/openalexAPI/"><img src="https://img.shields.io/badge/docs-📖-blue" alt="Docs"></a><br><img src="https://img.shields.io/badge/status-alpha-red" alt="Alpha"></td>
+  <td><strong>Alpha.</strong> Serve a local Parquet corpus as an OpenAlex-compatible web API: the same filters, OQL, <code>group_by</code> and full-text search against your own data, so openalexPro downloads from it unchanged; with a web page for queries in the browser. Not on r-universe yet: install from GitHub</td>
+  <td><img src="https://img.shields.io/badge/r--universe-not%20yet-lightgrey" alt="not on r-universe"><br><a href="https://github.com/openalexPro/openalexAPI/tree/main"><img src="https://img.shields.io/github/r-package/v/openalexPro/openalexAPI/main?label=main" alt="main version"></a><br><a href="https://github.com/openalexPro/openalexAPI/tree/dev"><img src="https://img.shields.io/github/r-package/v/openalexPro/openalexAPI/dev?label=dev" alt="dev version"></a></td>
+  <td><a href="https://github.com/openalexPro/openalexAPI/actions/workflows/R-CMD-check.yaml?query=branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/openalexPro/openalexAPI/R-CMD-check.yaml?branch=main&label=CI%20main" alt="CI main"></a><br><a href="https://github.com/openalexPro/openalexAPI/actions/workflows/R-CMD-check.yaml?query=branch%3Adev"><img src="https://img.shields.io/github/actions/workflow/status/openalexPro/openalexAPI/R-CMD-check.yaml?branch=dev&label=CI%20dev" alt="CI dev"></a></td>
+</tr>
 </tbody>
 </table>
 
@@ -67,6 +73,13 @@ install.packages(
     "openalexSnapshot", "openalexVectorComp"),
   repos = c("https://openalexpro.r-universe.dev", "https://cloud.r-project.org")
 )
+```
+
+**openalexAPI** is in alpha and not on r-universe yet; install it from GitHub:
+
+```r
+# install.packages("pak")
+pak::pak("openalexPro/openalexAPI")
 ```
 
 **Development versions** (the `dev` branch: newest features, not yet released) install from GitHub:
@@ -97,6 +110,10 @@ pro_snowball(identifier = "W2741809807", output = "my_project/snowball")
 library(openalexConvert)
 corpus_export_via_pandoc("my_project/parquet", "my_project/refs.bib", to = "bibtex")
 corpus_to_zotero("my_project")  # into the collection my_project > parquet
+
+# 5. Query the corpus like OpenAlex, from openalexPro or in the browser (alpha)
+library(openalexAPI)
+serve_corpus("my_project/parquet", port = 8000)  # then open http://127.0.0.1:8000/
 ```
 
 ## Design principles
